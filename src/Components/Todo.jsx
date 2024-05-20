@@ -3,6 +3,10 @@ import "./CSS/Todo.css"
 import { useState  } from "react";
 import {useRef} from "react";
 import {useEffect} from "react";
+import TodoItems from "./TodoItems";
+
+  
+
 let count  = 0; 
 const Todo = () => {
 
@@ -20,7 +24,7 @@ const Todo = () => {
   }, [todos])
     
   return (
-    <div>
+  
 
         <div className="todo">
            <div className="todo-header">To-DO List</div> 
@@ -29,17 +33,18 @@ const Todo = () => {
                 <div onClick={()=>{add()}} className="todo-add-btn">ADD</div>
            </div>
            
-           <div className="todo list"></div>
+           <div className="todo-list"></div>
 
               {todos.map((item,index)=>{
                 return <TodoItems key={index} no={item.no} display= {item.display} text={item.text} />
               })}
 
-        </div>
 
-      
-    </div>
+          </div>
+        
+       
+    
   )
-}
+}   
 
 export default Todo

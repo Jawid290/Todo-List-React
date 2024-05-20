@@ -1,8 +1,11 @@
 
-import "./CSS/TodoItems.css"
+import "./CSS/TodoItems.css";
+
 
 import tick from "./Assets/tick.png";
+
 import not from "./Assets/not.png";
+
 import cross from "./Assets/cross.png";
 
 
@@ -10,7 +13,9 @@ import cross from "./Assets/cross.png";
 
 
 
-const TodoItems = ({no,dispaly,text}) => {
+const TodoItems = ({no,display,text}) => {
+
+  
   return (
     <div className= "todoitems" >
       <div calssName="todoitems-container">
@@ -19,9 +24,13 @@ const TodoItems = ({no,dispaly,text}) => {
       <div className="todoitems-text">{text}</div>
 
       </div>
-      <img src={cross} alt=""/>
+      <img src={cross} alt="" />
 
-    </ div>
+    
+     
+    </div>
+    
+     
   )
 }
 
