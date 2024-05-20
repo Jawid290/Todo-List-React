@@ -2,7 +2,7 @@
     width: 600px;
     min-height: 732px;
     border-radius: 20px;
-    background: #fff;
+    background: white;
     margin: auto;
     margin-top: 174px;
     display: flex;
@@ -52,7 +52,7 @@ margin-top: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 100px;
+    margin-left: -100px;
     color: #fff;
     font-size: 26px;
     font-weight: 600px;
