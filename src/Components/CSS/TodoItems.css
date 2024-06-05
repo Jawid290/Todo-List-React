@@ -3,22 +3,25 @@
     justify-content: space-between;
     padding: 16px 0px;
     align-items: center;
+    
+    
 }
 
 .todoitems-container{
     display: flex;
+   
 }
 
 .todoitems-text{
     padding-left: 16px;
-    color: #404040;
+    color: #000000;
     font-size: 30px;
 }
 
 .todoitem-cross{
     cursor: pointer;
     padding-right: 25px;
-
+   
 
 }
 
